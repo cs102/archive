@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <h1>Listing Posts</h1>
 
@@ -6,7 +6,7 @@
 <%= link_to 'New Post', new_post_path %>
 
 <% @posts.each do |post| %>
-  <p class="post-title"> <%= post.title %></p>
+  <p class="post-title"> <%= link_to post.title, post %></p>
   <p class="post-date"><%= post.created_at.strftime("%B %d, %Y - %l:%M %p") %></p>
   <p><%= post.body %></p>
   <%= link_to 'Show', post %>

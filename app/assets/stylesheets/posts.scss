@@ -2,11 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.post-title {
+
+
+.post-title{
 	color: #4078c0;
 	font-weight: bold;
 	font-size: 18px;
 }
+
 
 .post-date {
 	font-size: 13px;
@@ -26,4 +29,6 @@ textarea {
     width: 980px;
     margin-right: auto;
     margin-left: auto;
+    border-top: 4px solid #c9e6f2;
+    margin-top: 2em;
 }
