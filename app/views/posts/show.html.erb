@@ -3,6 +3,8 @@
   <%= @post.title %>
 </p>
 
+<p class="post-date"><%= @post.created_at.strftime("%B %d, %Y - %l:%M %p") %></p>
+
 <p class="post-body">
   <%= @post.body %>
 </p>

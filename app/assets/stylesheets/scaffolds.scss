@@ -19,18 +19,47 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #fff;
+  text-decoration: none;
 
   &:visited {
-    color: #666;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    text-decoration: underline;
   }
 }
 
+.btn {
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  padding: 6px 12px;
+  -webkit-appearance: none;
+}
+
+.btn-primary {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+  background-color: #60b044;
+  background-image: -webkit-linear-gradient(#8add6d, #60b044);
+  background-image: linear-gradient(#8add6d, #60b044);
+  border-color: #5ca941;
+  font-size: 1.1em;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
 div {
   &.field, &.actions {
     margin-bottom: 10px;
@@ -38,12 +67,14 @@ div {
 }
 
 #notice {
+  margin-top: 1em;
   padding: 8px 35px 8px 14px;
   color: green;
   color: #468847;
   background-color: #dff0d8;
   border-color: #d6efc6;
   font-size: 16px;
+  border-left: 6px solid #52E052;
 }
 
 .field_with_errors {
